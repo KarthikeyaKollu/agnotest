@@ -46,6 +46,7 @@ import os
 load_dotenv()  # Load variables from .env file
 
 api_key = os.getenv("API_KEY")
+print(api_key)
 
 client = OpenAI(api_key=api_key)
 
