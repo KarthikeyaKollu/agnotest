@@ -229,3 +229,7 @@ nest-asyncio==1.6.0
 psycopg
 pgvector
 aiofiles
+
+pypdf
+rapidocr_onnxruntime
+beautifulsoup4
