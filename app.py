@@ -42,7 +42,7 @@ from agno.utils.log import log_info, logger
 
 api_key = st.secrets["env"]["API_KEY"]
 
-st.write("API Key:", api_key)
+
 
 client = OpenAI(api_key=api_key)
 
