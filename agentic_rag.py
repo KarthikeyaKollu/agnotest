@@ -69,7 +69,7 @@ def get_agentic_rag_agent(
             table_name="agentic_rag_documents",
             schema="ai",
             # Use OpenAI embeddings
-            embedder=OpenAIEmbedder(id="text-embedding-3-small"),
+            embedder=OpenAIEmbedder(id="text-embedding-3-small",api_key=api_key),
         ),
         num_documents=3,  # Retrieve 3 most relevant documents
 
