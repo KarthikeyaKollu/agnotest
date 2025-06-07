@@ -40,13 +40,9 @@ from agno.document.reader.base import  Reader as BasePDFImageReader
 from agno.utils.log import log_info, logger
 
 
-from dotenv import load_dotenv
-import os
+api_key = st.secrets["env"]["API_KEY"]
 
-load_dotenv()  # Load variables from .env file
-
-api_key = os.getenv("API_KEY")
-print(api_key)
+st.write("API Key:", api_key)
 
 client = OpenAI(api_key=api_key)
 
