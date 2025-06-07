@@ -233,3 +233,4 @@ aiofiles
 pypdf
 rapidocr_onnxruntime
 beautifulsoup4
+psycopg2
