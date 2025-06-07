@@ -228,3 +228,14 @@ urllib3==2.4.0
     # via requests
 websockets==15.0.1
     # via google-genai
+
+
+agno
+anthropic
+duckduckgo_search
+google-genai
+groq
+nest_asyncio
+openai
+sqlalchemy
+streamlit
