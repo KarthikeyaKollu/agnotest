@@ -44,8 +44,6 @@ import streamlit as st
 db_url = st.secrets["env"]["DB_URL"]
 api_key = st.secrets["env"]["API_KEY"]
 
-st.write("DB URL:", db_url)
-st.write("API Key:", api_key)
 
 def get_agentic_rag_agent(
     model_id: str = "openai:gpt-4o",
