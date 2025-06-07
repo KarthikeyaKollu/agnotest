@@ -39,18 +39,13 @@ from agno.storage.agent.postgres import PostgresAgentStorage
 from agno.tools.duckduckgo import DuckDuckGoTools
 from agno.vectordb.pgvector import PgVector
 
+import streamlit as st
 
+db_url = st.secrets["env"]["DB_URL"]
+api_key = st.secrets["env"]["API_KEY"]
 
-from dotenv import load_dotenv
-import os
-
-load_dotenv()  # Load variables from .env file
-
-db_url = os.getenv("DB_URL")
-api_key = os.getenv("API_KEY")
-
-print("DB URL:", db_url)
-print("API Key:", api_key)
+st.write("DB URL:", db_url)
+st.write("API Key:", api_key)
 
 def get_agentic_rag_agent(
     model_id: str = "openai:gpt-4o",
