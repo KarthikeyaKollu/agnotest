@@ -39,7 +39,15 @@ from agno.document.base import Document
 from agno.document.reader.base import  Reader as BasePDFImageReader
 from agno.utils.log import log_info, logger
 
-client = OpenAI()
+
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # Load variables from .env file
+
+api_key = os.getenv("API_KEY")
+
+client = OpenAI(api_key=api_key)
 
 class PDFImageReader(BasePDFImageReader):
     """Reader for PDF files with OpenAI Vision captioning of images"""
